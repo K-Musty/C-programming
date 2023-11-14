@@ -23,7 +23,7 @@ int _ident(const char *format, va_list arr)
 	{
 		if (form[i].format == *format)
 		{
-			return form[i].funct(arr);
+			return (form[i].funct(arr));
 		}
 		i++;
 	}
