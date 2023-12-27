@@ -1,7 +1,8 @@
 #include <stdio.h>
-#define (2,4) a*b
 
 void main()
 {
-	printf("%d\n");
+	int a = 2;
+	int b = 3;
+	printf("%d\n", a * b);
 }
