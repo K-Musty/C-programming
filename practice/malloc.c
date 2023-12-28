@@ -20,5 +20,8 @@ int main(void)
 	printf("Please enter your given memory");
 	for (i = 0; i < n; i++)
 		scanf("%d\n", point[i]);
+	for (j = 0; j < n; j++)
+		scanf("%d\n", point[i]);
+	return (0);
 
 }
