@@ -20,7 +20,7 @@ int main(void)
 	printf("Please enter your given memory\n");
 	for (i = 0; i < n; i++)
 		scanf("%d", (point + i));
-	for (j = 0; j < n; j++)
-		scanf("%d", (point + i));
-	return (point);
+	//for (j = 0; j < n; j++)
+	//	scanf("%d", (point + i));
+	free(point);
 }
