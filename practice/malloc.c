@@ -5,10 +5,10 @@
  */
 int main(void)
 {
-	int k;
-	int point, i, j;
+	int n;
+	int *point, i, j;
 
-	printf("Enter number of memory\n");
+	printf("Enter number of memory: ");
 	scanf("%d\n", &n);
 	point = (int *)malloc(sizeof(int) * n);
 
@@ -17,11 +17,10 @@ int main(void)
 		printf("Memory not found");
 		exit(1);
 	}
-	printf("Please enter your given memory");
+	printf("Please enter your given memory\n");
 	for (i = 0; i < n; i++)
-		scanf("%d\n", point[i]);
+		scanf("%d", (point + i));
 	for (j = 0; j < n; j++)
-		scanf("%d\n", point[i]);
-	return (0);
-
+		scanf("%d", (point + i));
+	return (point);
 }
