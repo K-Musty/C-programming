@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-main()
+char main()
 {
 	char ch;
 	ch = getchar();
-	printf("%c", ch);}
+	printf("%c", ch);
 }
